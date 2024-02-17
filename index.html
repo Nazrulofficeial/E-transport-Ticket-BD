@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-transport BD</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Raleway font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Inter Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Styles CSS -->
+    <style>
+      * {
+        color: black;
+      }
+      .font-inter {
+        font-family: "Inter", sans-serif;
+      }
+      .font-raleway {
+        font-family: "Raleway", sans-serif;
+      }
+    </style>
+
+    <!-- Frequently Used Items -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "primary-color": "#1DD100",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="mx-32 my-10">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <a
+              class="btn btn-ghost text-4xl text-[#030712] font-raleway font-extrabold"
+              >E-Ticket BD</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-xl gap-8 font-raleway">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <div class=""></div>
+            <button
+              class="btn bg-[#1DD1001A] font-raleway text-xl px-8 text-primary-color border-[#1DD10066] font-bold"
+            >
+              Bus<img class="" src="images/tabler-icon-bus.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Banner Section -->
+      <section class="">
+        <div
+          class="hero flex flex-col justify-center items-center mx-auto w-[1170px] h-[550px] relative"
+          style="background-image: url(images/banner.png)"
+        >
+          <div class="hero"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-[740px]">
+              <h1 class="mb-5 text-5xl font-bold text-white">
+                End-to-End Travel with <br />
+                <span class="text-primary-color">P Paribahan</span>
+              </h1>
+              <p class="mb-5 text-white">
+                Yes, you can run unit tests and view the results directly within
+                the app. The <br />
+                integrated testing features allow for a streamlined .
+              </p>
+              <button
+                class="btn bg-primary-color border-0 px-8 font-raleway text-xl font-bold text-black"
+              >
+                Buy Tickets
+              </button>
+            </div>
+          </div>
+          <!-- Banner card -->
+          <div class="flex font-inter gap-6 absolute -bottom-16">
+            <div
+              class="px-8 py-9 bg-white rounded-3xl flex border-b-[#1DD100] border-solid border-[3px] border-t-0 border-x-0 gap-4"
+            >
+              <img src="images/people.png" alt="" />
+              <div class="">
+                <h1 class="text-4xl font-bold">500k+</h1>
+                <p class="font-Inter text-[rgba(3, 7, 18, 0.60)]">
+                  Registered users
+                </p>
+              </div>
+            </div>
+            <div
+              class="px-8 py-9 bg-white rounded-3xl flex border-b-[#1DD100] border-solid border-[3px] border-t-0 border-x-0 gap-4"
+            >
+              <img src="images/ticket-cupon.png" alt="" />
+              <div class="">
+                <h1 class="text-4xl font-bold">1.7 lacks</h1>
+                <p class="font-Inter text-[rgba(3, 7, 18, 0.60)]">
+                  Tickets sold
+                </p>
+              </div>
+            </div>
+            <div
+              class="px-8 py-9 bg-white rounded-3xl flex border-b-[#1DD100] border-solid border-[3px] border-t-0 border-x-0 gap-4"
+            >
+              <img src="images/people.png" alt="" />
+              <div class="">
+                <h1 class="text-4xl font-bold">80K+</h1>
+                <p class="font-Inter text-[rgba(3, 7, 18, 0.60)]">
+                  Rental partners
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Best offer section -->
+      <section class="mt-[120px] mb-12 mx-32">
+          <h1 class="text-center text-[40px] font-bold">Best offers for you</h1>
+          <div class="flex justify-center gap-6 mt-12">
+            <!-- First Card Here -->
+            <div class="card card-side bg-[#FFBF0F]">
+              <div class="px-[50px] font-inter flex flex-col justify-center">
+                <h2 class="card-title text-[40px] font-black">15% OFF</h2>
+                <h5 class="text-xl">on your next purchase</h5>
+                <p class="text-[18px] text-[#03071280] font-medium">use by January 2024</p>
+              </div>
+              
+              <!-- Divider IMG -->
+              <img src="images/cupon-devider.png" alt="">
+
+              <div class="card-body  flex flex-col justify-center items-center py-20 font-raleway pr-12">
+                <h2 class="card-title text-3xl font-bold">NEW15</h2>
+                <p class="text-xl font-medium text-[#03071280]">Coupon Code</p>
+              </div>
+            </div>
+            <!-- Second Card Here -->
+            <div class="card card-side bg-[#F78C9C]">
+              <div class="px-[50px] font-inter flex flex-col justify-center">
+                <h2 class="card-title text-[40px] font-black">20% OFF</h2>
+                <h5 class="text-xl mt-[18px] mb-[10px]">on your next purchase</h5>
+                <p class="text-[18px] text-[#03071280] font-medium">use by January 2024</p>
+              </div>
+              
+              <!-- Divider IMG -->
+              <img src="images/cupon-devider.png" alt="">
+
+              <div class="card-body  flex flex-col justify-center items-center py-20 font-raleway pr-12">
+                <h2 class="card-title text-3xl font-bold">Couple 20</h2>
+                <p class="text-xl font-medium text-[#03071280]">Coupon Code</p>
+              </div>
+            </div>
+          </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
