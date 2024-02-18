@@ -30,9 +30,11 @@
       * {
         color: black;
       }
+
       .font-inter {
         font-family: "Inter", sans-serif;
       }
+
       .font-raleway {
         font-family: "Raleway", sans-serif;
       }
@@ -52,7 +54,9 @@
       };
     </script>
   </head>
+
   <body>
+    <!-- Header Part -->
     <header>
       <nav class="mx-32 my-10">
         <div class="navbar bg-base-100">
@@ -98,11 +102,12 @@
             </ul>
           </div>
           <div class="navbar-end">
-            <div class=""></div>
             <button
               class="btn bg-[#1DD1001A] font-raleway text-xl px-8 text-primary-color border-[#1DD10066] font-bold"
             >
-              Bus<img class="" src="images/tabler-icon-bus.svg" alt="" />
+              <a href="#main" class="flex gap-[10px]">
+                Bus<img class="" src="images/tabler-icon-bus.svg" alt="" />
+              </a>
             </button>
           </div>
         </div>
@@ -161,7 +166,7 @@
             <div
               class="px-8 py-9 bg-white rounded-3xl flex border-b-[#1DD100] border-solid border-[3px] border-t-0 border-x-0 gap-4"
             >
-              <img src="images/people.png" alt="" />
+              <img src="images/stoppage.png" alt="" />
               <div class="">
                 <h1 class="text-4xl font-bold">80K+</h1>
                 <p class="font-Inter text-[rgba(3, 7, 18, 0.60)]">
@@ -174,43 +179,137 @@
       </section>
       <!-- Best offer section -->
       <section class="mt-[120px] mb-12 mx-32">
-          <h1 class="text-center text-[40px] font-bold">Best offers for you</h1>
-          <div class="flex justify-center gap-6 mt-12">
-            <!-- First Card Here -->
-            <div class="card card-side bg-[#FFBF0F]">
-              <div class="px-[50px] font-inter flex flex-col justify-center">
-                <h2 class="card-title text-[40px] font-black">15% OFF</h2>
-                <h5 class="text-xl">on your next purchase</h5>
-                <p class="text-[18px] text-[#03071280] font-medium">use by January 2024</p>
-              </div>
-              
-              <!-- Divider IMG -->
-              <img src="images/cupon-devider.png" alt="">
+        <h1 class="text-center text-[40px] font-bold">Best offers for you</h1>
+        <div class="flex justify-center gap-6 mt-12">
+          <!-- First Card Here -->
+          <div class="card card-side bg-[#FFBF0F]">
+            <div class="px-[50px] font-inter flex flex-col justify-center">
+              <h2 class="card-title text-[40px] font-black">15% OFF</h2>
+              <h5 class="text-xl">on your next purchase</h5>
+              <p class="text-[18px] text-[#03071280] font-medium">
+                use by January 2024
+              </p>
+            </div>
 
-              <div class="card-body  flex flex-col justify-center items-center py-20 font-raleway pr-12">
-                <h2 class="card-title text-3xl font-bold">NEW15</h2>
-                <p class="text-xl font-medium text-[#03071280]">Coupon Code</p>
+            <!-- Divider IMG -->
+            <img src="images/cupon-devider.png" alt="" />
+
+            <div
+              class="card-body flex flex-col justify-center items-center py-20 font-raleway pr-12"
+            >
+              <h2 class="card-title text-3xl font-bold">NEW15</h2>
+              <p class="text-xl font-medium text-[#03071280]">Coupon Code</p>
+            </div>
+          </div>
+          <!-- Second Card Here -->
+          <div class="card card-side bg-[#F78C9C]">
+            <div class="px-[50px] font-inter flex flex-col justify-center">
+              <h2 class="card-title text-[40px] font-black">20% OFF</h2>
+              <h5 class="text-xl mt-[18px] mb-[10px]">on your next purchase</h5>
+              <p class="text-[18px] text-[#03071280] font-medium">
+                use by January 2024
+              </p>
+            </div>
+
+            <!-- Divider IMG -->
+            <img src="images/cupon-devider.png" alt="" />
+
+            <div
+              class="card-body flex flex-col justify-center items-center py-20 font-raleway pr-12"
+            >
+              <h2 class="card-title text-3xl font-bold">Couple 20</h2>
+              <p class="text-xl font-medium text-[#03071280]">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center mt-16">
+          <button
+            class="btn bg-white hover:bg-primary-color hover:text-white hover:border-primary-color border-primary-color text-primary-color"
+          >
+            See All Offers
+          </button>
+        </div>
+      </section>
+      <!-- E-ticket main option -->
+      <section
+        id="main"
+        class="mt-[120px] px-32 pt-[120px] pb-12 bg-[#F7F8F8] border-t-2 border-primary-color rounded-t-[88px]"
+      >
+        <!-- Main section heading -->
+        <div class="flex flex-col items-center font-raleway text-center gap-6 mb-12">
+          <h1 class="text-[40px] font-bold">P.H Paribahan</h1>
+          <p class="text-[#03071299] font-inter">
+            Yes, you can run unit tests and view the results directly within the
+            app. The integrated <br />
+            testing features allow for a streamlined .
+          </p>
+        </div>
+        <!-- Ticket Information -->
+        <div class="w-[1170px] h-[420px] bg-white rounded-3xl">
+          <div class="flex justify-between">
+            <!-- Info Side -->
+            <div class="p-8">
+              <!-- Info Header -->
+              <div class="flex items-center justify-between w-[800px] h-24">
+                <!-- Logo text -->
+                <div class="flex items-center gap-4">
+                  <img class="w-[68px] h-12" src="images/bus-logo.png" alt="" />
+                  <div class="">
+                    <h1 class="text-3xl font-raleway font-bold">
+                      Greenline Paribahan
+                    </h1>
+                    <p>Coach-009-WEB ! AC_Business</p>
+                  </div>
+                </div>
+                <!-- Availability -->
+                <div
+                  class="bg-[#1DD10026] rounded-xl flex items-center gap-2 justify-center px-4 py-3"
+                >
+                  <img class="w-7 h-7" src="images/seat-green.png" alt="" />
+                  <h3 class="text-primary-color font-inter text-xl font-medium">
+                    <span
+                      class="text-primary-color font-inter text-xl font-medium"
+                      >40</span
+                    >
+                    Seats left
+                  </h3>
+                </div>
+              </div>
+              <!-- Info Body -->
+              <div class="w-[810px] h-[260px] bg-[#F7F8F8] rounded-3xl p-8">
+                <div class="flex justify-between items-center border-b-[#03071233] border-b-2 border-dashed pb-6">
+                  <h2 class="text-xl font-semibold font-raleway text-[#03071299]">Route</h2>
+                  <h2 class="text-xl font-semibold font-raleway text-[#030712]">Dhaka - Sylhet</h2>
+                </div>
+                <div class="flex justify-between items-center border-b-[#03071233] border-b-2 border-dashed pb-6 pt-6">
+                  <h2 class="text-xl font-semibold font-raleway text-[#03071299]">Departure Time</h2>
+                  <h2 class="text-xl font-semibold font-raleway text-[#030712]">9:00 PM</h2>
+                </div>
+                <div class="flex justify-between items-center border-b-[#03071233] pt-6">
+                  <button class="btn font-inter text-sm font-medium w-[230px] bg-[#03070C0D] text-black">Boarding Point - Laxmipur</button>
+                  <button class="btn font-inter text-sm font-medium w-[230px] bg-[#03070C0D] text-black">Dropping Point - Bogura</button>
+                  <button class="btn font-inter text-sm font-medium w-[230px] bg-[#03070C0D] text-black">Est. Time - 11 Hour</button>
+                </div>
               </div>
             </div>
-            <!-- Second Card Here -->
-            <div class="card card-side bg-[#F78C9C]">
-              <div class="px-[50px] font-inter flex flex-col justify-center">
-                <h2 class="card-title text-[40px] font-black">20% OFF</h2>
-                <h5 class="text-xl mt-[18px] mb-[10px]">on your next purchase</h5>
-                <p class="text-[18px] text-[#03071280] font-medium">use by January 2024</p>
-              </div>
-              
-              <!-- Divider IMG -->
-              <img src="images/cupon-devider.png" alt="">
+            <!-- Divider IMG -->
+            <img src="images/info-devider.png" alt="" />
 
-              <div class="card-body  flex flex-col justify-center items-center py-20 font-raleway pr-12">
-                <h2 class="card-title text-3xl font-bold">Couple 20</h2>
-                <p class="text-xl font-medium text-[#03071280]">Coupon Code</p>
+            <!-- Price Side -->
+            <div class="px-7 my-auto pr-16 text-center">
+              <img class="w-12 h-12 mx-auto" src="images/fare.png" alt="" />
+              <div class="w-[130px] font-raleway">
+                <h1 class="text-3xl font-semibold">550 Taka</h1>
+                <p class="text-2xl text-[#03071299] font-semibold">Per Seat</p>
               </div>
             </div>
           </div>
+        </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      
+    </footer>
   </body>
 </html>
