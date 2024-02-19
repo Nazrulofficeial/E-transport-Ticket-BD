@@ -83,7 +83,7 @@
         <div class="navbar-end">
           <button class="btn bg-[#1DD1001A] font-raleway text-xl px-8 text-primary-color border-[#1DD10066] font-bold">
             <a href="#main-ticket-section" class="flex gap-[10px]">
-              Bus<img class="" src="images/tabler-icon-bus.svg" alt="" />
+              Bus<img class="" src="images/bus-icon.png" alt="" />
             </a>
           </button>
         </div>
@@ -108,7 +108,7 @@
               integrated testing features allow for a streamlined .
             </p>
             <button class="btn bg-primary-color border-0 px-8 font-raleway text-xl font-bold text-black">
-              Buy Tickets
+              <a href="#main-ticket-section">Buy Tickets</a>
             </button>
           </div>
         </div>
@@ -225,11 +225,11 @@
                   <p>Coach-009-WEB ! AC_Business</p>
                 </div>
               </div>
-              <!-- Availability -->
+              <!-- Availability --> 
               <div class="bg-[#1DD10026] rounded-xl flex items-center gap-2 justify-center px-4 py-3">
                 <img class="w-7 h-7" src="images/seat-green.png" alt="" />
                 <h3 class="text-primary-color font-inter text-xl font-medium">
-                  <span class="text-primary-color font-inter text-xl font-medium">40</span>
+                  <span class="text-primary-color font-inter text-xl font-medium" id="availability-count">16</span>
                   Seats left
                 </h3>
               </div>
@@ -279,7 +279,7 @@
         </div>
       </div>
       <!-- Main Ticket option -->
-      <div class="bg-white mt-7 w-[1170px] h-[600px] p-8 flex">
+      <div class="bg-white mt-7 w-[1170px] h-[600px] p-8 flex rounded-3xl">
         <!-- Seat Selection -->
         <div class="border-r-2  border-dashed border-r-[#0307124D] pr-8 ">
           <h1 class="font-raleway text-2xl font-semibold border-b-2 border-b-[#03071233] border-dashed pb-6 w-[600px]">
@@ -304,25 +304,25 @@
                   src="images/tabler-icon-steering-wheel.svg" alt=""></button>
             </div>
             <div class="flex gap-[94px] mt-6 items-center">
-              <div class="grid grid-cols-2 gap-8 font-inter text-[#0307127F]">
-                <button class="btn bg-[#F7F8F8] w-[110px] h-[55px] ">A1</button>
-                <button class="btn bg-[#F7F8F8] w-[110px] h-[55px] ">A2</button>
-                <button class="btn bg-[#F7F8F8] w-[110px] h-[55px] ">B1</button>
-                <button class="btn bg-[#F7F8F8] w-[110px] h-[55px] ">B2</button>
-                <button class="btn bg-[#F7F8F8] w-[110px] h-[55px] ">C1</button>
-                <button class="btn bg-[#F7F8F8] w-[110px] h-[55px] ">C2</button>
-                <button class="btn bg-[#F7F8F8] w-[110px] h-[55px] ">D1</button>
-                <button class="btn bg-[#F7F8F8] w-[110px] h-[55px] ">D2</button>
+              <div class="grid grid-cols-2 gap-8 font-inter ">
+                <button class="btn text-[#0307127F] bg-[#F7F8F8] w-[110px] h-[55px] color-changer" id="A1" onclick="continueGame()">A1</button>
+                <button class="btn text-[#0307127F] bg-[#F7F8F8] w-[110px] h-[55px] color-changer" id="A2">A2</button>
+                <button class="btn text-[#0307127F] bg-[#F7F8F8] w-[110px] h-[55px] color-changer" id="B1">B1</button>
+                <button class="btn text-[#0307127F] bg-[#F7F8F8] w-[110px] h-[55px] color-changer" id="B2">B2</button>
+                <button class="btn text-[#0307127F] bg-[#F7F8F8] w-[110px] h-[55px] color-changer" id="C1">C1</button>
+                <button class="btn text-[#0307127F] bg-[#F7F8F8] w-[110px] h-[55px] color-changer" id="C2">C2</button>
+                <button class="btn text-[#0307127F] bg-[#F7F8F8] w-[110px] h-[55px] color-changer" id="D1">D1</button>
+                <button class="btn text-[#0307127F] bg-[#F7F8F8] w-[110px] h-[55px] color-changer" id="D2">D2</button>
               </div>
               <div class="grid grid-cols-2 gap-8 font-inter text-[#0307127F]">
-                <button class="btn bg-[#F7F8F8] w-[110px] h-[55px]">A3</button>
-                <button class="btn bg-[#F7F8F8] w-[110px] h-[55px]">A4</button>
-                <button class="btn bg-[#F7F8F8] w-[110px] h-[55px]">B3</button>
-                <button class="btn bg-[#F7F8F8] w-[110px] h-[55px]">B4</button>
-                <button class="btn bg-[#F7F8F8] w-[110px] h-[55px]">C3</button>
-                <button class="btn bg-[#F7F8F8] w-[110px] h-[55px]">C4</button>
-                <button class="btn bg-[#F7F8F8] w-[110px] h-[55px]">D3</button>
-                <button class="btn bg-[#F7F8F8] w-[110px] h-[55px]">D4</button>
+                <button class="btn text-[#0307127F] bg-[#F7F8F8] w-[110px] h-[55px] color-changer" id="A3">A3</button>
+                <button class="btn text-[#0307127F] bg-[#F7F8F8] w-[110px] h-[55px] color-changer" id="A4">A4</button>
+                <button class="btn text-[#0307127F] bg-[#F7F8F8] w-[110px] h-[55px] color-changer" id="B3">B3</button>
+                <button class="btn text-[#0307127F] bg-[#F7F8F8] w-[110px] h-[55px] color-changer" id="B4">B4</button>
+                <button class="btn text-[#0307127F] bg-[#F7F8F8] w-[110px] h-[55px] color-changer" id="C3">C3</button>
+                <button class="btn text-[#0307127F] bg-[#F7F8F8] w-[110px] h-[55px] color-changer" id="C4">C4</button>
+                <button class="btn text-[#0307127F] bg-[#F7F8F8] w-[110px] h-[55px] color-changer" id="D3 myButton">D3</button>
+                <button class="btn text-[#0307127F] bg-[#F7F8F8] w-[110px] h-[55px] color-changer" id="D4" onclick="letsClick('Hello world')">D4</button>
               </div>
             </div>
           </div>
@@ -387,11 +387,47 @@
               </div>
             </dialog>
           </div>
+          <!-- Policy -->
+          <div class="flex justify-evenly pt-3 font-inter">
+            <a href="#" class="underline text-[#03071299]">Terms and Conditions</a>
+            <a href="#" class="underline text-[#03071299]">Cancellation Policy</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
-  <footer></footer>
+  <footer>
+      <div class="px-[135px] py-[120px] bg-[#030712] w-[1440] h-[460px]">
+        <div class="flex justify-between pb-12 border-b-2 border-dashed border-[#FFFFFF4D]">
+          <div class="">
+            <h1 class=" text-white font-raleway text-4xl font-extrabold mb-4">E-Ticket</h1>
+            <p class=" text-[#FFFFFFCC] font-inter text-xl font-normal">E-Ticket is a digital platform to make your
+              <br>
+              daily commuting better</p>
+          </div>
+          <div class="">
+            <h1 class=" text-white mb-5 text-xl font-raleway font-semibold">Download Our App</h1>
+            <img href="#" src="images/Group 104.png" alt="">
+          </div>
+        </div>
+        <div class="mt-8 flex justify-between">
+          <div class="">
+            <h1 class="font-inter text-sm text-[#FFFFFFB2]">
+              @all rights reserved, P-Ticket services limited.2024
+            </h1>
+          </div>
+          <div class="flex gap-8">
+            <a class="text-white text-[16px] font-medium font-inter" href="">Terms & condition</a>
+            <a class="text-white text-[16px] font-medium font-inter" href="">Return & refund policy</a>
+            <a class="text-white text-[16px] font-medium font-inter" href="">Privacy policy</a>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+  <!-- Scripts Are Here -->
+  <script src="scripts/script.js"></script>
+  <script src="scripts/script2.js"></script>
 </body>
 
 </html>
